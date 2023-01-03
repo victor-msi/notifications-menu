@@ -140,6 +140,7 @@ body{
   border: 1px solid var(--red);
   background: var(--red);
   border-radius: 500px;
+  visibility: visible;
 }
 
 /* Notificaciones leidas */
@@ -181,4 +182,33 @@ body{
   font-size: .8rem;
   font-weight: 800;
   color: var(--blue);
+}
+
+@media (max-width: 375px){
+  .notifications-container{
+    width: 90%;
+  }
+
+  .message{
+    /* position: absolute; */
+    
+    font-size: .6rem;
+    width: 80%;
+    margin-left: 8px;
+  }
+
+  .time{
+    left: -7px;
+  }
+
+  .user,
+  .post,
+  .club{
+    font-size: .7rem;
+  }
+
+  .messages{
+    top: 0px;
+    font-size: .6rem;
+  }
 }
